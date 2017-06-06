@@ -1,7 +1,7 @@
 <template lang="pug">
   .productbox
     .top
-      .productpicture
+      .productpicture(:style="bg_css")
       .tag 拍賣中
       .productbtn
         i.fa.fa-hand-o-up
@@ -18,7 +18,12 @@
 
 <script>
 	export default {
-		props: ['product']
+		props: ['product'],
+    computed: {
+      bg_css: function() {
+        return {"background-image": "url('" + this.product.cover + "')"}
+      }
+    }
 	}
 </script>
 
@@ -54,7 +59,6 @@
       width: 100%
       height: 100%
       position: absolute
-      background-image: url('http://a3.att.hudong.com/35/50/19300542898388141672508205437_950.jpg')
       background-size: cover
       left: 0
       top: 0

@@ -2,14 +2,17 @@
   div
     navbar
     router-view
+    foobar
 </template>
 
 <script>
   import Navbar from './components/Navbar'
+  import Footer from './components/Footer'
 
   export default {
     components: {
-      'navbar': Navbar
+      'navbar': Navbar,
+      'foobar': Footer
     }
   }
 
