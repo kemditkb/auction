@@ -23,12 +23,15 @@
 </script>
 
 <style lang="sass">
+  @import '../../sass/var.scss';
+
   .productbox
     width: 260px
     background-color: white
     box-shadow: 0px 0px 12px rgba(0,0,0,0.2)
     border-radius: 5px
     cursor: pointer
+    margin: 20px
     &:hover
       .productbtn
         bottom: 10px
@@ -44,7 +47,7 @@
       text-align: center
       transform: translateX(95px) translateY(15px) rotate(45deg)
       padding: 5px 0px
-      background-color: #EB5E00
+      background-color: $color_dark_orange
       color: white
       font-weight: 700
     .productpicture
@@ -76,7 +79,7 @@
         transform: translate(-50%, -50%)
         font-size: 22px
       &:hover
-        background-color: #EB5E00
+        background-color: $color_dark_orange
         color: white
 
   .bottom
@@ -100,6 +103,6 @@
       position: absolute
       bottom: 0px
       left: 0px
-      background-color: #EB5E00
+      background-color: $color_dark_orange
       border-radius: 0px 0px 5px 5px
 </style>

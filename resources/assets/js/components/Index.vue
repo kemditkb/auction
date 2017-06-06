@@ -1,15 +1,21 @@
 <template lang="pug">
-  header.jumbotron
-    .container
-      h1 天下第一拍
-      hr
-      h4 拍拍都精采
+  div
+    header.jumbotron
+      .container
+        h1 天下第一拍
+        hr
+        h4 拍拍都精采
+    products
 </template>
 
 <script>
-export default {
+  import Products from './Products.vue'
 
-}
+  export default {
+    components: {
+      'products': Products
+    }
+  }
 </script>
 
 <style lang="sass">

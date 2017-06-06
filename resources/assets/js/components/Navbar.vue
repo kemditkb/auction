@@ -21,6 +21,8 @@
 </script>
 
 <style lang="sass">
+  @import '../../sass/var.scss';
+  
   nav.navbar
     transition: 0.5s
 
@@ -30,5 +32,5 @@
       color: white
       transition: 0.5s
       &:hover
-        color: #ff6e3a
+        color: $color_orange
 </style>
