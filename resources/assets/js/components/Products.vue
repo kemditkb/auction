@@ -8,6 +8,7 @@
 
 <script>
   import Product from './Product.vue'
+  import Carousel from './Carousel.vue'
 
   export default {
     components: {

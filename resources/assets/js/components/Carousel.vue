@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container
+  .container.product_detail
     #myCarousel.carousel.slide(data-ride='carousel')
       ol.carousel-indicatiors
         li.active(data-target='#myCarousel', data-slide-to='0')
@@ -20,6 +20,10 @@
 </template>
 
 <style lang="sass">
+  .container.product_detail
+    padding-top: 80px
+    padding-bottom: 60px
+
   li
     list-style-type: none
 

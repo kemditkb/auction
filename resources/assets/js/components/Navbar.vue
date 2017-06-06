@@ -29,7 +29,7 @@
   nav.navbar.navbar-default.navbar-fixed-top.navbar-top
     background-color: transparent
     a
-      color: white
+      color: #333
       transition: 0.5s
       &:hover
         color: $color_orange

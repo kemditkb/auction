@@ -1,19 +1,20 @@
 <template lang="pug">
-  .productbox
-    .top
-      .productpicture(:style="bg_css")
-      .tag 拍賣中
-      .productbtn
-        i.fa.fa-hand-o-up
-    .bottom
-      h1.producttitle {{ product.name }}
-      .texts
-        .pricerow
-          .price 起標價格
-            span.orangle NT${{ product.target_price }}
-        .nowpeople 出價次數
-          span.orangle {{ product.history_total }}次
-      .orangebar
+  router-link(:to="{path: '/carousel'}")
+    .productbox
+      .top
+        .productpicture(:style="bg_css")
+        .tag 拍賣中
+        .productbtn
+          i.fa.fa-hand-o-up
+      .bottom
+        h1.producttitle {{ product.name }}
+        .texts
+          .pricerow
+            .price 起標價格
+              span.orangle NT${{ product.target_price }}
+          .nowpeople 出價次數
+            span.orangle {{ product.history_total }}次
+        .orangebar
 </template>
 
 <script>
@@ -36,7 +37,7 @@
     box-shadow: 0px 0px 12px rgba(0,0,0,0.2)
     border-radius: 5px
     cursor: pointer
-    margin: 20px
+    margin-bottom: 20px
     &:hover
       .productbtn
         bottom: 10px
