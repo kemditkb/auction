@@ -4,9 +4,10 @@
       section.login
         .row
           .col-md-6.col-md-push-3
-            .panel.panel-default
+            .panel.panel-primary
               .panel-heading
-                strong 登入
+                .panel-title#login-title
+                  i.fa.fa-sign-in 登入
               .panel-body
                 form
                   .form-group
@@ -15,11 +16,15 @@
                   .form-group
                     label 密碼
                     input.form-control(placeholder='Enter your password')
-                  button.btn.btn-primary 登入
+                  button.btn.btn-primary.pull-right 登入
 </template>
 
 <style lang="sass">
   #login-wrapper
     margin-top: 50px
     padding-top: 50px
+
+  #login-title
+    font-weight: 700
+    letter-spacing: 2px
 </style>

@@ -2,7 +2,7 @@
   .container
     .title 古董
     .row
-      .col-sm-3(v-for="product in products")
+      .col-sm-4(v-for="product in products")
         my-product(:product="product")
 </template>
 

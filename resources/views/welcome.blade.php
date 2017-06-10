@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="css/app.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--Typekit Kit 字體-->
+        <script src="https://use.typekit.net/qem3vzm.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
     <body>
         <div id="app"></div>

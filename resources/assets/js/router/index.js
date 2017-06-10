@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 import login from '../components/Login'
 import register from '../components/Register'
-import carousel from '../components/Carousel'
+import product_detail from '../components/ProductDetail'
 import index from '../components/Index'
 
 Vue.use(VueRouter)
@@ -13,7 +13,7 @@ const router = new VueRouter({
         { path: "/", component: index },
         { path: "/login", component: login },
         { path: "/register", component: register },
-        { path: "/carousel", component: carousel }
+        { path: "/product_detail", component: product_detail }
     ]
 })
 

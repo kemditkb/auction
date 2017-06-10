@@ -1,9 +1,8 @@
 <template lang="pug">
-  router-link(:to="{path: '/carousel'}")
+  router-link(:to="{path: '/product_detail'}")
     .productbox
       .top
-        .productpicture(:style="bg_css")
-        .tag 拍賣中
+        .cover(:style="bg_css")
         .productbtn
           i.fa.fa-hand-o-up
       .bottom
@@ -32,31 +31,21 @@
   @import '../../sass/var.scss';
 
   .productbox
-    width: 260px
     background-color: white
     box-shadow: 0px 0px 12px rgba(0,0,0,0.2)
     border-radius: 5px
     cursor: pointer
-    margin-bottom: 20px
     &:hover
       .productbtn
         bottom: 10px
-      .productpicture
+      .cover
         transform: scale(1.13)
 
   .top
     height: 180px
     position: relative
     overflow: hidden
-    .tag
-      width: 100%
-      text-align: center
-      transform: translateX(95px) translateY(15px) rotate(45deg)
-      padding: 5px 0px
-      background-color: $color_dark_orange
-      color: white
-      font-weight: 700
-    .productpicture
+    .cover
       width: 100%
       height: 100%
       position: absolute

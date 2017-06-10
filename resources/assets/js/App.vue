@@ -18,7 +18,7 @@
 
 </script>
 
-<style src="../sass/main.scss" lang="sass"></style>
+<style src="../sass/style_2017.scss" lang="sass"></style>
 
 <style lang="sass">
   div
