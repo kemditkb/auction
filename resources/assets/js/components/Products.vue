@@ -1,9 +1,10 @@
 <template lang="pug">
   .container
-    .title 古董
-    .row
-      .col-sm-4(v-for="product in products")
-        my-product(:product="product")
+    .wrapper#prod_wrapper
+      .title 古董
+      .row
+        .col-sm-4(v-for="product in products")
+          my-product.my-product(:product="product")
 </template>
 
 <script>
@@ -74,11 +75,13 @@
 <style lang="sass">
   @import '../../sass/var.scss';
   
-  .container
+  #prod_wrapper
     .title
       border-left: 6px solid $color_red
       font-size: 24px
       font-weight 900
       padding-left: 15px
       margin-bottom: 15px
+    .my-product
+      margin: 2px
 </style>

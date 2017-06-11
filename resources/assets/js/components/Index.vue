@@ -19,9 +19,6 @@
 </script>
 
 <style lang="sass">
-  body
-    margin: 0
-    padding: 0
   header.jumbotron
     text-align: center
     background-image: url('http://imgs.ntdtv.com/pic/2016/10-14/p7748371a384009559.jpg')
