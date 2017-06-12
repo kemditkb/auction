@@ -4,7 +4,7 @@
       .title 古董
       .row
         .col-sm-4(v-for="product in products")
-          my-product.my-product(:product="product")
+          my-product(:product="product")
 </template>
 
 <script>
@@ -82,6 +82,4 @@
       font-weight 900
       padding-left: 15px
       margin-bottom: 15px
-    .my-product
-      margin: 2px
 </style>

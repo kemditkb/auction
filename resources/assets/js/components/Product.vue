@@ -31,6 +31,7 @@
   @import '../../sass/var.scss';
 
   .productbox
+    margin: 10px
     background-color: white
     box-shadow: 0px 0px 12px rgba(0,0,0,0.2)
     border-radius: 5px
