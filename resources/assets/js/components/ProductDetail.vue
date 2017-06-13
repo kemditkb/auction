@@ -5,20 +5,11 @@
         h2 產品類別
       .row
         .col-sm-5.col-md-4.xs-margin
-          img#b_img(src="https://www.intw.com.tw/imgs/product/2016090500215321.jpg")
+          img#b_img(:src="bimgsrc")
           .row
-            .col-xs-4
+            .col-xs-4(v-for="src in simgsrc")
               a.s_img.thumbnail
-                img(src="https://www.intw.com.tw/imgs/product/2016090500215322.jpg")
-            .col-xs-4
-              a.s_img.thumbnail
-                img(src="https://www.intw.com.tw/imgs/product/2016090500215321.jpg")
-            .col-xs-4
-              a.s_img.thumbnail
-                img(src="https://www.intw.com.tw/imgs/product/2016090500215323.jpg")
-            .col-xs-4
-              a.s_img.thumbnail
-                img(src="https://www.intw.com.tw/imgs/product/2016090500215424.jpg")
+                img(:src="src" @click="doImageChange(src)")
         .col-sm-7.col-md-8.product-description
           h2 產品1
           .time
@@ -79,12 +70,24 @@
 </template>
 
 <script>
-  $(function() {
-    $('.s_img').click(function(){
-      var img = $(this).find('img').attr('src');
-      $('#b_img').attr('src', img);
-    });
-  });
+  export default {
+    data () {
+      return {
+        bimgsrc: "https://www.intw.com.tw/imgs/product/2016090500215322.jpg",
+        simgsrc: [
+          "https://www.intw.com.tw/imgs/product/2016090500215322.jpg",
+          "https://www.intw.com.tw/imgs/product/2016090500215321.jpg",
+          "https://www.intw.com.tw/imgs/product/2016090500215323.jpg",
+          "https://www.intw.com.tw/imgs/product/2016090500215424.jpg"
+        ]
+      }
+    },
+    methods: {
+      doImageChange(src) {
+        this.bimgsrc = src;
+      }
+    }
+  }
 </script>
 
 <style lang="sass">
